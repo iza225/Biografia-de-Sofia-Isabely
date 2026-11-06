@@ -1,0 +1,757 @@
+
+/* =================================
+   CONFIGURAÇÕES GERAIS
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background-color: #f8e3e5;
+    color: #542b39;
+    line-height: 1.7;
+}
+
+/* =================================
+   CABEÇALHO E MENU
+================================= */
+
+header {
+    background: linear-gradient(90deg, #4c1029, #741d3d, #4c1029);
+    color: #fff0e8;
+    padding: 22px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-bottom: 4px solid #d68b9b;
+    box-shadow: 0 4px 12px #4c102955;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f8d1d9;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff0e8;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #f3a7b8;
+}
+
+/* =================================
+   TÍTULOS
+================================= */
+
+.titulo {
+    text-align: center;
+    font-size: 2rem;
+    color: #751e3e;
+    background: linear-gradient(90deg, #741d3d, #9c3c59, #741d3d);
+    color: #fff0e8;
+    padding: 12px 20px;
+    border: 2px solid #d58b9c;
+    border-radius: 40px;
+    margin: 0 auto 35px;
+    max-width: 750px;
+    box-shadow: 0 4px 10px #57162b30;
+}
+
+/* =================================
+   APRESENTAÇÃO INICIAL
+================================= */
+
+#hero {
+    min-height: 430px;
+    padding: 60px 8%;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 40px;
+    background:
+        radial-gradient(circle at top left, #f3b9c8, transparent 45%),
+        linear-gradient(135deg, #e8c3ca, #f9e9df, #e9c8d7);
+    border-bottom: 5px double #9b405b;
+}
+
+.hero-imagem {
+    min-height: 300px;
+    background: linear-gradient(145deg, #285448, #496d5b, #8c7770);
+    border: 5px solid #741d3d;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px #4c102955;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    color: #fff1e8;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-imagem span {
+    font-size: 3rem;
+}
+
+.hero-imagem .flor {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.hero-imagem .frasco {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+.hero-imagem h2 {
+    font-size: 1.7rem;
+    color: #f7d5d5;
+    margin: 15px 0;
+}
+
+.hero-imagem p {
+    color: #fff4e9;
+}
+
+.hero-texto {
+    background-color: #fff0e7;
+    padding: 35px;
+    border: 3px solid #b96c7f;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px #4c102922;
+}
+
+.hero-texto h1 {
+    color: #751e3e;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.hero-texto p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* =================================
+   SOBRE MIM
+================================= */
+
+#sobre {
+    padding: 65px 8%;
+    background-color: #fff0e9;
+    border-bottom: 3px double #bd7185;
+}
+
+.sobre-conteudo {
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.sobre-texto p {
+    text-align: justify;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #583b45;
+}
+
+.sobre-detalhe {
+    background: linear-gradient(145deg, #d4e0d0, #a9c5b1, #f1d2d5);
+    border: 4px double #6e423e;
+    border-radius: 15px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    color: #405a47;
+    box-shadow: 0 5px 15px #4c102922;
+}
+
+.sobre-detalhe span {
+    font-size: 3rem;
+    margin: 10px;
+}
+
+.sobre-detalhe h3 {
+    color: #63253b;
+    font-size: 1.5rem;
+}
+
+/* =================================
+   HABILIDADES
+================================= */
+
+#habilidades {
+    padding: 65px 6%;
+    background:
+        radial-gradient(circle at 10% 10%, #f3c8d3, transparent 35%),
+        #efd8dc;
+}
+
+.habilidades-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.habilidade-card {
+    background: linear-gradient(145deg, #ffe9e6, #f1cbd1);
+    padding: 22px 15px;
+    border: 2px solid #9d5366;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 12px #541a2b20;
+    transition: 0.3s;
+}
+
+.habilidade-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 18px #541a2b35;
+    background: #fff0eb;
+}
+
+.habilidade-card span {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.habilidade-card h3 {
+    color: #781e40;
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+}
+
+.habilidade-card p {
+    font-size: 0.93rem;
+    text-align: left;
+    color: #593944;
+}
+
+/* =================================
+   PROJETOS
+================================= */
+
+#projetos {
+    padding: 65px 8%;
+    background-color: #fff0e9;
+}
+
+.projeto-card {
+    max-width: 650px;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    background: linear-gradient(135deg, #e4c6cb, #f8e0d8);
+    border: 4px double #9d5366;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px #541a2b25;
+    transition: 0.3s;
+}
+
+.projeto-card:hover {
+    transform: scale(1.02);
+}
+
+.projeto-card span {
+    font-size: 3rem;
+}
+
+.projeto-card h3 {
+    color: #741d3d;
+    font-size: 1.5rem;
+    margin: 15px;
+}
+
+.projeto-card p {
+    font-size: 1.1rem;
+}
+
+/* =================================
+   CURRÍCULO
+================================= */
+
+#curriculo {
+    padding: 65px 8%;
+    text-align: center;
+    background: linear-gradient(135deg, #e2d9c9, #f4d4d8);
+}
+
+#curriculo p {
+    margin-bottom: 20px;
+}
+
+.botao {
+    display: inline-block;
+    background: linear-gradient(90deg, #5d1935, #9b3b59);
+    color: #fff0e8;
+    padding: 13px 28px;
+    border-radius: 30px;
+    border: 2px solid #d18a9a;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #a74b66;
+    transform: translateY(-4px);
+}
+
+/* =================================
+   CONTATO
+================================= */
+
+#contato {
+    padding: 65px 8%;
+    background-color: #fff0e9;
+}
+
+#form {
+    max-width: 600px;
+    margin: auto;
+    background: linear-gradient(145deg, #f6dce0, #f1e5dc);
+    padding: 35px;
+    border: 3px double #a65c70;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px #541a2b20;
+}
+
+#form label {
+    display: block;
+    font-weight: bold;
+    color: #741d3d;
+    margin: 15px 0 5px;
+}
+
+#form input,
+#form textarea {
+    width: 100%;
+    padding: 13px;
+    border: 2px solid #c88b9a;
+    border-radius: 8px;
+    background-color: #fff8f2;
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+#form input:focus,
+#form textarea:focus {
+    border-color: #741d3d;
+    box-shadow: 0 0 8px #a74b6655;
+}
+
+#form button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 13px 35px;
+    background: linear-gradient(90deg, #5d1935, #9b3b59);
+    color: white;
+    border: 2px solid #d18a9a;
+    border-radius: 30px;
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#form button:hover {
+    background: #a74b66;
+    transform: translateY(-3px);
+}
+
+/* =================================
+   RODAPÉ
+================================= */
+
+footer {
+    padding: 30px 15px;
+    text-align: center;
+    background: linear-gradient(90deg, #4c1029, #741d3d, #4c1029);
+    color: #ffe7e5;
+    border-top: 4px solid #d68b9b;
+}
+
+footer p {
+    font-size: 1.1rem;
+}
+
+footer .frase-final {
+    font-style: italic;
+    color: #f2bdc9;
+    margin: 10px 0;
+}
+
+footer span {
+    font-size: 1.5rem;
+}
+
+/* =================================
+   RESPONSIVIDADE
+================================= */
+
+@media (max-width: 900px) {
+
+    .habilidades-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #hero {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-conteudo {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    header nav ul {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .titulo {
+        font-size: 1.4rem;
+    }
+
+    .habilidades-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-texto {
+        padding: 20px;
+    }
+
+    #form {
+        padding: 20px;
+    }
+
+}
+/* FOTO DE PERFIL */
+
+#hero .foto-perfil {
+    width: 160px !important;
+    height: 160px !important;
+    min-width: 160px;
+    max-width: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 5px solid #e9a9b9;
+    outline: 3px solid #741d3d;
+    box-shadow: 0 5px 18px #4c102955;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* =====================================
+   ORGANIZAÇÃO GERAL DO SITE
+===================================== */
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+main {
+    width: 100%;
+}
+
+section {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 65px 5%;
+}
+
+/* =====================================
+   APRESENTAÇÃO E FOTO
+===================================== */
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    padding: 55px 5%;
+}
+
+.hero-imagem {
+    width: 100%;
+    max-width: 500px;
+    min-height: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#hero .foto-perfil {
+    width: 150px !important;
+    height: 150px !important;
+    min-width: 150px;
+    max-width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.hero-texto {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-texto p {
+    text-align: justify;
+}
+
+/* =====================================
+   SOBRE MIM
+===================================== */
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sobre .titulo {
+    width: 100%;
+}
+
+.sobre-conteudo {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 0.8fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.sobre-texto {
+    width: 100%;
+}
+
+.sobre-detalhe {
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+}
+
+/* =====================================
+   HABILIDADES
+===================================== */
+
+#habilidades {
+    text-align: center;
+}
+
+.habilidades-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.habilidade-card {
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.habilidade-card p {
+    text-align: center;
+}
+
+/* =====================================
+   PROJETOS
+===================================== */
+
+#projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projeto-card {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* =====================================
+   CURRÍCULO
+===================================== */
+
+#curriculo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#curriculo .titulo {
+    width: 100%;
+}
+
+/* =====================================
+   CONTATO
+===================================== */
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contato .titulo {
+    width: 100%;
+}
+
+#form {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* =====================================
+   RODAPÉ
+===================================== */
+
+footer {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =====================================
+   TABLETS
+===================================== */
+
+@media (max-width: 900px) {
+
+    .sobre-conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-detalhe {
+        max-width: 500px;
+    }
+
+    .habilidades-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+/* =====================================
+   CELULARES
+===================================== */
+
+@media (max-width: 600px) {
+
+    section {
+        padding: 40px 6%;
+    }
+
+    #hero {
+        padding: 40px 6%;
+    }
+
+    .hero-imagem {
+        min-height: 280px;
+    }
+
+    .hero-texto {
+        padding: 22px;
+    }
+
+    .habilidades-container {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo {
+        font-size: 1.3rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .habilidade-card {
+        max-width: 450px;
+        margin: auto;
+    }
+
+}
